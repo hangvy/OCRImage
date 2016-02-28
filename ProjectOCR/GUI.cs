@@ -1307,9 +1307,36 @@ namespace VietOCR.NET
             setButton();
         }
 
+        List<Rectangle> listRect = new List<Rectangle>();
         private void toolStripBtnOCR_Click(object sender, EventArgs e)
         {
+            listRect.Add(new Rectangle(533, 185, 176, 36));
+            listRect.Add(new Rectangle(174, 185, 261, 38));
+            listRect.Add(new Rectangle(133, 274, 233, 38));
+            List<String> resultString = new List<string>();
 
+            //rect = rectHoten;
+            foreach (Rectangle rect in listRect)
+            {
+                OCRImageEntity entity = new OCRImageEntity(imageList, inputfilename, imageIndex, rect, curLangCode);
+                entity.ScreenshotMode = true;
+                //r1 = rect;
+                IList<Image> images = entity.ClonedImages;
+                OCR<Image> ocrEngine = new OCRImages();
+                ocrEngine.Language = entity.Language;
+                resultString.Add(ocrEngine.RecognizeText(((List<Image>)images).GetRange(imageIndex, 1), entity.Inputfilename, rect));
+            }
+            txtIdStudent.Text = resultString[0];
+            txtFullName.Text = resultString[1];
+            txtClassName.Text = resultString[2];
         }
+
+        private void reset_Click(object sender, EventArgs e)
+        {
+            txtClassName.Text = "";
+            txtFullName.Text = "";
+            txtIdStudent.Text = "";
+        }
+
     }
 }

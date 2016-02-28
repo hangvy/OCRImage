@@ -67,6 +67,26 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Library\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
+    <Reference Include="MySql.Data, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\video huong dan\mysql-connector-net-6.9.8-noinstall\v4.5\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF5, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\video huong dan\mysql-connector-net-6.9.8-noinstall\v4.5\MySql.Data.Entity.EF5.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\video huong dan\mysql-connector-net-6.9.8-noinstall\v4.5\MySql.Data.Entity.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Fabric.Plugin, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\video huong dan\mysql-connector-net-6.9.8-noinstall\v4.5\MySql.Fabric.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Web, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\video huong dan\mysql-connector-net-6.9.8-noinstall\v4.5\MySql.Web.dll</HintPath>
+    </Reference>
     <Reference Include="NHunspell, Version=0.9.6.0, Culture=neutral, PublicKeyToken=1ac793ea843b4366, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Library\NHunspell.dll</HintPath>
@@ -94,12 +114,14 @@
     <Compile Include="BulkDialog.Designer.cs">
       <DependentUpon>BulkDialog.cs</DependentUpon>
     </Compile>
+    <Compile Include="Connection.cs" />
     <Compile Include="Controls\NonblinkingToolStripStatusLabel.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Controls\NonblinkingToolStripStatusLabel.Designer.cs">
       <DependentUpon>NonblinkingToolStripStatusLabel.cs</DependentUpon>
     </Compile>
+    <Compile Include="DBConnection.cs" />
     <Compile Include="GUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +147,7 @@
       <DependentUpon>GUIWithThumbnail.cs</DependentUpon>
     </Compile>
     <Compile Include="OCRHelper.cs" />
+    <Compile Include="PreparedStatement.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="x64\liblept168.dll" />
@@ -654,7 +677,10 @@
     </Compile>
     <Compile Include="OCRFiles.cs" />
     <Compile Include="OCRImages.cs" />
+    <Compile Include="ResultSet.cs" />
     <Compile Include="SpellCheckHelper.cs" />
+    <Compile Include="StudentDAOImpl.cs" />
+    <Compile Include="StudentEntity.cs" />
     <Compile Include="TrackbarDialog.cs">
       <SubType>Form</SubType>
     </Compile>

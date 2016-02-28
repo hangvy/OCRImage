@@ -45,6 +45,11 @@ F:\DOANTN\MOCK\OCRImage\ProjectOCR\bin\Debug\sk-SK\VietOCR.resources.dll
 F:\DOANTN\MOCK\OCRImage\ProjectOCR\bin\Debug\tr-TR\VietOCR.resources.dll
 F:\DOANTN\MOCK\OCRImage\ProjectOCR\bin\Debug\vi-VN\VietOCR.resources.dll
 F:\DOANTN\MOCK\OCRImage\ProjectOCR\bin\Debug\ICSharpCode.SharpZipLib.dll
+F:\DOANTN\MOCK\OCRImage\ProjectOCR\bin\Debug\MySql.Data.dll
+F:\DOANTN\MOCK\OCRImage\ProjectOCR\bin\Debug\MySql.Data.Entity.EF5.dll
+F:\DOANTN\MOCK\OCRImage\ProjectOCR\bin\Debug\MySql.Data.Entity.EF6.dll
+F:\DOANTN\MOCK\OCRImage\ProjectOCR\bin\Debug\MySql.Fabric.Plugin.dll
+F:\DOANTN\MOCK\OCRImage\ProjectOCR\bin\Debug\MySql.Web.dll
 F:\DOANTN\MOCK\OCRImage\ProjectOCR\bin\Debug\NHunspell.dll
 F:\DOANTN\MOCK\OCRImage\ProjectOCR\bin\Debug\Tesseract.dll
 F:\DOANTN\MOCK\OCRImage\ProjectOCR\bin\Debug\VietKeyInput.dll
