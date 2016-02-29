@@ -1314,6 +1314,7 @@ namespace VietOCR.NET
             listRect.Add(new Rectangle(174, 185, 261, 38));
             listRect.Add(new Rectangle(133, 274, 233, 38));
             List<String> resultString = new List<string>();
+            Pen blackPen = new Pen(Color.Black, 3);
 
             //rect = rectHoten;
             foreach (Rectangle rect in listRect)
@@ -1336,6 +1337,11 @@ namespace VietOCR.NET
             txtClassName.Text = "";
             txtFullName.Text = "";
             txtIdStudent.Text = "";
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
 
     }
