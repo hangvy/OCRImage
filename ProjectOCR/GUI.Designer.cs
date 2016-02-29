@@ -61,6 +61,7 @@ namespace VietOCR.NET
             this.toolStripBtnRotateCCW = new System.Windows.Forms.ToolStripButton();
             this.toolStripBtnRotateCW = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.reset = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -151,7 +152,6 @@ namespace VietOCR.NET
             this.toolStripStatusLabelPSM = new VietOCR.NET.Controls.NonblinkingToolStripStatusLabel(this.components);
             this.toolStripStatusLabelPSMvalue = new System.Windows.Forms.ToolStripStatusLabel();
             this.backgroundWorkerLoad = new System.ComponentModel.BackgroundWorker();
-            this.reset = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerImage)).BeginInit();
             this.splitContainerImage.Panel1.SuspendLayout();
             this.splitContainerImage.Panel2.SuspendLayout();
@@ -427,6 +427,13 @@ namespace VietOCR.NET
             this.toolStripSeparator6.Name = "toolStripSeparator6";
             resources.ApplyResources(this.toolStripSeparator6, "toolStripSeparator6");
             // 
+            // reset
+            // 
+            resources.ApplyResources(this.reset, "reset");
+            this.reset.Name = "reset";
+            this.reset.UseVisualStyleBackColor = true;
+            this.reset.Click += new System.EventHandler(this.reset_Click);
+            // 
             // label3
             // 
             resources.ApplyResources(this.label3, "label3");
@@ -444,6 +451,7 @@ namespace VietOCR.NET
             resources.ApplyResources(this.label1, "label1");
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Name = "label1";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtClassName
             // 
@@ -1044,13 +1052,6 @@ namespace VietOCR.NET
             this.backgroundWorkerLoad.WorkerSupportsCancellation = true;
             this.backgroundWorkerLoad.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorkerLoad_DoWork);
             this.backgroundWorkerLoad.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorkerLoad_RunWorkerCompleted);
-            // 
-            // reset
-            // 
-            resources.ApplyResources(this.reset, "reset");
-            this.reset.Name = "reset";
-            this.reset.UseVisualStyleBackColor = true;
-            this.reset.Click += new System.EventHandler(this.reset_Click);
             // 
             // GUI
             // 
